@@ -1,0 +1,21 @@
+﻿@*@model HomeData*@
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    //HomeData data = new HomeData();
+    //if (Model != null)
+    //{
+    //    data = Model;
+    //}
+    string a = "hoang";
+}
+@*@using TrungTamTinHoc.Areas.Home.Models.Schema*@
+@section css{
+}
+@section scripts{
+}
+@Html.Partial("Partial/_cart")
+@Html.Partial("Partial/_slide")
+@Html.Partial("Partial/_banner")
+@Html.Partial("Partial/_product")
+
