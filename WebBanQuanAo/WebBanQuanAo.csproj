@@ -130,6 +130,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\User\Controllers\HomeController.cs" />
+    <Compile Include="Areas\User\Controllers\LoginController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4704,6 +4705,7 @@
     <Content Include="public\assets\validator\multifield.js" />
     <Content Include="public\assets\validator\validator.js" />
     <Content Include="public\css\layout_User\main.css" />
+    <Content Include="public\css\layout_User\mainLogin.css" />
     <Content Include="public\css\layout_User\util.css" />
     <Content Include="public\fonts\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="public\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
@@ -5891,11 +5893,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\User\Models\" />
-    <Folder Include="Areas\User\Views\About\" />
-    <Folder Include="Areas\User\Views\Blog\" />
-    <Folder Include="Areas\User\Views\Contact\" />
-    <Folder Include="Areas\User\Views\Features\" />
-    <Folder Include="Areas\User\Views\Shop\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="public\assets\bootstrap-tagsinput-master\lib\angular\" />
@@ -5938,11 +5935,25 @@
     <Content Include="Areas\User\Views\_ViewStart.cshtml" />
     <Content Include="Areas\User\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\User\Views\Home\Home.cshtml" />
-    <Content Include="Areas\User\Views\Home\Partial\_cart.cshtml" />
     <Content Include="Areas\User\Views\Home\Partial\_slide.cshtml" />
     <Content Include="Areas\User\Views\Home\Partial\_banner.cshtml" />
     <Content Include="Areas\User\Views\Home\Partial\_product.cshtml" />
     <Content Include="Areas\User\Views\Home\Index.cshtml" />
+    <Content Include="Areas\User\Views\Shop\Shop.cshtml" />
+    <Content Include="Areas\User\Views\Features\Partial\_breadcrumb.cshtml" />
+    <Content Include="Areas\User\Views\Features\Partial\_ShopingCart.cshtml" />
+    <Content Include="Areas\User\Views\Features\Faatures.cshtml" />
+    <Content Include="Areas\User\Views\Contact\Contact.cshtml" />
+    <Content Include="Areas\User\Views\About\About.cshtml" />
+    <Content Include="Areas\User\Views\Blog\Blog.cshtml" />
+    <Content Include="Areas\User\Views\Shop\shop_detail.cshtml" />
+    <Content Include="Areas\User\Views\Shop\Partial\_breadcrumb.cshtml" />
+    <Content Include="Areas\User\Views\Shop\Partial\_ProductDetail.cshtml" />
+    <Content Include="Areas\User\Views\Shop\Partial\_RelatedProducts.cshtml" />
+    <Content Include="Areas\User\Views\Blog\Blog_Detail.cshtml" />
+    <Content Include="Areas\User\Views\Blog\Partial\_breadcrumb.cshtml" />
+    <Content Include="Areas\User\Views\Blog\Partial\_Content_Page.cshtml" />
+    <Content Include="Areas\User\Views\Login\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -5951,6 +5962,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BQA.Common\BQA.Common.csproj">
+      <Project>{966b423c-4793-4dfd-a8e7-146c6b5456d9}</Project>
+      <Name>BQA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BQA.Database\BQA.DataBase.csproj">
+      <Project>{b6e39c06-6976-4139-9df7-51dcb0136ced}</Project>
+      <Name>BQA.DataBase</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

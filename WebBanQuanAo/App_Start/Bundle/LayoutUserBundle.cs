@@ -19,6 +19,7 @@ namespace WebBanQuanAo.App_Start.Bundle
                 "~/public/js/layout_User/select2.js",
                 "~/public/vendor/daterangepicker/moment.min.js",
                 "~/public/vendor/daterangepicker/daterangepicker.js",
+                "~/public/vendor/countdowntime/countdowntime.js",
                 "~/public/vendor/slick/slick.min.js",
                 "~/public/js/layout_User/slick-custom.js",
                 "~/public/vendor/parallax100/parallax100.js",
@@ -46,7 +47,9 @@ namespace WebBanQuanAo.App_Start.Bundle
                 "~/public/vendor/MagnificPopup/magnific-popup.css",
                 "~/public/vendor/perfect-scrollbar/perfect-scrollbar.css",
                 "~/public/css/layout_User/util.css",
+                "~/public/css/layout_User/mainLogin.css",
                 "~/public/css/layout_User/main.css"
+                
             ));
 
             return bundles;

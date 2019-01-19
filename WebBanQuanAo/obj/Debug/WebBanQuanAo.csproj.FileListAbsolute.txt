@@ -158,3 +158,11 @@ C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CoreCompi
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CopyComplete
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.dll
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.pdb
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.pdb
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.dll.config
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.pdb
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.dll.config
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.xml

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BQA.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,7 @@ namespace WebBanQuanAo.Areas.User.Controllers
         {
             try
             {
-                
+                DataContext db = new DataContext();
                 return View();
             }
             catch (Exception e)
