@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBanQuanAo", "WebBanQuanAo\WebBanQuanAo.csproj", "{A37AE999-7B7D-4C32-8AC8-D2B438FCA42F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BQA.Common", "BQA.Common\BQA.Common.csproj", "{966B423C-4793-4DFD-A8E7-146C6B5456D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BQA.DataBase", "BQA.Database\BQA.DataBase.csproj", "{B6E39C06-6976-4139-9DF7-51DCB0136CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A37AE999-7B7D-4C32-8AC8-D2B438FCA42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A37AE999-7B7D-4C32-8AC8-D2B438FCA42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A37AE999-7B7D-4C32-8AC8-D2B438FCA42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966B423C-4793-4DFD-A8E7-146C6B5456D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966B423C-4793-4DFD-A8E7-146C6B5456D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966B423C-4793-4DFD-A8E7-146C6B5456D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966B423C-4793-4DFD-A8E7-146C6B5456D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6E39C06-6976-4139-9DF7-51DCB0136CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E39C06-6976-4139-9DF7-51DCB0136CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E39C06-6976-4139-9DF7-51DCB0136CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E39C06-6976-4139-9DF7-51DCB0136CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

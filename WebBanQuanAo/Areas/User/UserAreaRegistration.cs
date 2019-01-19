@@ -15,6 +15,14 @@ namespace WebBanQuanAo.Areas.User
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
+                 "Login",
+                 "home/login",
+                 new { controller = "Login", action = "Index", id = UrlParameter.Optional }
+             );
+
+
+
+            context.MapRoute(
                 "User_default",
                 "User/{controller}/{action}/{id}",
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional }
