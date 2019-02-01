@@ -1,45 +1,50 @@
 ﻿@{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    //HomeData data = new HomeData();
-    //if (Model != null)
-    //{
-    //    data = Model;
-    //}
-    string a = "hoang";
+
+}
+@section css{
+}
+@section scripts{
+    <script>
+        var url = {
+            socialLogin : '@Url.RouteUrl("homeCheckSocialLogin")',
+            tam : '@Url.RouteUrl("User_default")'
+        }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=startAppGG" async defer></script>
+    @Scripts.Render("~/public/js/login")
 }
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" id="form-login" action="@Url.RouteUrl("homeCheckLogin")" method="post">
                 <span class="login100-form-title p-b-43">
                     Login to continue
                 </span>
 
 
                 <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email">
-                    <span class="focus-input100"></span>
-                    <span class="label-input100">Email</span>
+                    <input class="input100 text-required" id="Username" placeholder="Username"  type="text" name="email">
+                    
                 </div>
 
 
                 <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass">
-                    <span class="focus-input100"></span>
-                    <span class="label-input100">Password</span>
+                    <input class="input100 text-required" id="Password" placeholder="Password" type="password" name="pass">
+                    
                 </div>
 
                 <div class="flex-sb-m w-full p-t-3 p-b-32">
                     <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
+                        <input  class="input-checkbox100" id="Remember" type="checkbox" name="remember-me">
+                        <label class="label-checkbox100" for="Remember">
                             Remember me
                         </label>
                     </div>
 
                     <div>
-                        <a href="#" class="txt1">
+                        <a href="@Url.RouteUrl("homeForgotPassword")" class="txt1">
                             Forgot Password?
                         </a>
                     </div>
@@ -47,7 +52,7 @@
 
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
+                    <button class="login100-form-btn" id="btn-login">
                         Login
                     </button>
                 </div>
@@ -59,17 +64,17 @@
                 </div>
 
                 <div class="login100-form-social flex-c-m">
-                    <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+                    <button id="btn-login-FB" class="login100-form-social-item flex-c-m bg1 m-r-5">
                         <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                    </a>
+                    </button>
 
-                    <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
+                    <button id="btn-login-GG" class="login100-form-social-item flex-c-m bg2 m-r-5 bg-danger ">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </button>
                 </div>
             </form>
 
-            <div class="login100-more" style="background-image: url('../../../../public/images/layout_User//bg-01.jpg');">
+            <div class="login100-more" style="background-image: url('../../../../public/images/layout_User/bg-01.jpg');">
             </div>
         </div>
     </div>

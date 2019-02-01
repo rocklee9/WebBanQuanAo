@@ -162,7 +162,13 @@ C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.dll
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.pdb
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Common.dll.config
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.dll
-C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.pdb
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Database.dll.config
 C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.xml
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Validate.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Validate.pdb
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\BQA.Validate.dll.config
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\System.Data.SqlClient.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.xml

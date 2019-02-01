@@ -47,9 +47,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -126,11 +135,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\Bundle\HomeBundle.cs" />
     <Compile Include="App_Start\Bundle\LayoutUserBundle.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\User\Controllers\HomeController.cs" />
     <Compile Include="Areas\User\Controllers\LoginController.cs" />
+    <Compile Include="Areas\User\Controllers\RegisterController.cs" />
+    <Compile Include="Areas\User\Models\Login\LoginModel.cs" />
+    <Compile Include="Areas\User\Models\Login\Schema\Account.cs" />
+    <Compile Include="Areas\User\Models\Login\Schema\SocialAccount.cs" />
+    <Compile Include="Areas\User\Models\Register\RegisterModel.cs" />
+    <Compile Include="Areas\User\Models\Register\Schema\NewAccount.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4704,6 +4720,7 @@
     <Content Include="public\assets\validator\index.html" />
     <Content Include="public\assets\validator\multifield.js" />
     <Content Include="public\assets\validator\validator.js" />
+    <Content Include="public\css\home\register\register.css" />
     <Content Include="public\css\layout_User\main.css" />
     <Content Include="public\css\layout_User\mainLogin.css" />
     <Content Include="public\css\layout_User\util.css" />
@@ -4800,6 +4817,23 @@
     <Content Include="public\images\layout_User\thumb-01.jpg" />
     <Content Include="public\images\layout_User\thumb-02.jpg" />
     <Content Include="public\images\layout_User\thumb-03.jpg" />
+    <Content Include="public\js\common\admin.js" />
+    <Content Include="public\js\common\base64.js" />
+    <Content Include="public\js\common\common.js" />
+    <Content Include="public\js\common\jquery-cookie.js" />
+    <Content Include="public\js\common\jquery-form.js" />
+    <Content Include="public\js\common\jquery.alerts.js" />
+    <Content Include="public\js\common\jquery.error-style.js" />
+    <Content Include="public\js\common\jquery.unobtrusive-ajax.js" />
+    <Content Include="Areas\User\Views\Register\Register.cshtml" />
+    <None Include="public\js\common\jquery.validate-vsdoc.js" />
+    <Content Include="public\js\common\jquery.validate.js" />
+    <Content Include="public\js\common\jquery.validate.unobtrusive.js" />
+    <Content Include="public\js\common\md5.js" />
+    <Content Include="public\js\common\message.js" />
+    <Content Include="public\js\home\login\index.js" />
+    <Content Include="public\js\home\login\socialLogin.js" />
+    <Content Include="public\js\home\register\register.js" />
     <Content Include="public\js\layout_User\addwish.js" />
     <Content Include="public\js\layout_User\gallery.js" />
     <Content Include="public\js\layout_User\main.js" />
@@ -5892,7 +5926,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\User\Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="public\assets\bootstrap-tagsinput-master\lib\angular\" />
@@ -5971,6 +6004,10 @@
     <ProjectReference Include="..\BQA.Database\BQA.DataBase.csproj">
       <Project>{b6e39c06-6976-4139-9df7-51dcb0136ced}</Project>
       <Name>BQA.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BQA.Validate\BQA.Validate.csproj">
+      <Project>{a6a934c1-a8d9-452e-bea6-d6a1b508adfb}</Project>
+      <Name>BQA.Validate</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

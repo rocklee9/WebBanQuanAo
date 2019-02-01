@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+
+}
+@section css{
+    @Styles.Render("~/public/css/register")
+}
+@section scripts{
+    <script>
+        var url = {
+            checkExistAccount: '@Url.RouteUrl("homeCheckExistAccount")',
+            login: '@Url.RouteUrl("Login")'
+        }
+    </script>
+    @Scripts.Render("~/public/js/register")
+}
+
+<div class="magin-register back-ground"></div>
+<!--Breadcrumb Banner Area Start-->
+<div class="breadcrumb-banner-area pb-60 back-ground">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text">
+                    <h1 class="text-center no-line">Đăng ký</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Breadcrumb Banner Area-->
+<!--Search Category Start-->
+<div class="search-category mb-70 back-ground">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-1">
+                <form id="form-register" action="@Url.RouteUrl("homeCreateAccount")" method="post">
+                    <div class="form-container">
+                        <div class="box-select">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="Ho" class="white-label">Họ <span class="text-required">*</span></label>
+                                    <input type="text" name="Ho" id="Ho" class="required email mb-5" maxlength="50" tabindex="1" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="Ten" class="white-label">Tên <span class="text-required">*</span></label>
+                                    <input  type="text" name="Ten" id="Ten" class="required email mb-5" maxlength="50" tabindex="2" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="GioiTinh" class="white-label">Giới tính</label>
+                                    <select name="GioiTinh" id="GioiTinh" class="mb-5 email" tabindex="3">
+                                        <option value="true">Nam</option>
+                                        <option value="false">Nữ</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="NgaySinh" class="white-label">Ngày sinh <span class="text-required">*</span></label>
+                                    <div class="input-group datetimepicker mb-5">
+                                        <input type="tel" class="date required email" id="NgaySinh" name="NgaySinh" maxlength="8" tabindex="4" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="Username" class="white-label">Username <span class="text-required">*</span></label>
+                                    <input type="text" name="Username" id="Username" class="required alphanumeric email mb-5" maxlength="50" tabindex="5" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="Email" class="white-label">Email <span class="text-required">*</span></label>
+                                    <input type="email" name="Email" id="Email" class="required email mb-5" maxlength="255" tabindex="6" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="Password" class="white-label">Password <span class="text-required">*</span></label>
+                                    <input type="password" name="Password" id="Password" class="required email" maxlength="50" tabindex="7" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="ConfirmPassword" class="white-label">ConfirmPassword <span class="text-required">*</span></label>
+                                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" class="required email" maxlength="50" tabindex="8" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="custom-check">
+                                        <span class="text-login">
+                                            Tôi đông ý với
+                                            <a href="@Url.RouteUrl("TermsConditions")" target="_blank">điều khoản</a>
+                                            và
+                                            <a href="@Url.RouteUrl("PrivacyPolicy")" target="_blank">chính sách bảo mật</a>
+                                        </span>
+                                        <input type="checkbox" id="Agree" value="1" tabindex="9">
+                                        <span class="checkmark"><span class="check"></span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <button class="col-sm-3 col-sm-offset-3 bg-primary" type="button" id="btn-regist" tabindex="10">Đăng ký</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <span class="text-login">
+                                        Đã có
+                                        <a href="@Url.RouteUrl("Login")">Đăng nhập</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Search Category-->
+<div class="magin-register back-ground"></div>

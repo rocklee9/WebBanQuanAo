@@ -10,6 +10,7 @@ namespace WebBanQuanAo
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles = LayoutUserBundle.RegisterBundles(bundles);
+            bundles = HomeBundle.RegisterBundles(bundles);
             BundleTable.EnableOptimizations = false;
         }
     }
