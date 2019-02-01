@@ -14,8 +14,7 @@ namespace WebBanQuanAo.Areas.User.Controllers
         {
             try
             {
-                DataContext db = new DataContext();
-                return View();
+                return View("Home");
             }
             catch (Exception e)
             {

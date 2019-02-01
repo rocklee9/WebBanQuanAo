@@ -30,7 +30,13 @@ namespace WebBanQuanAo.App_Start.Bundle
                 "~/public/js/layout_User/addwish.js",
                 "~/public/vendor/perfect-scrollbar/perfect-scrollbar.min.js",
                 "~/public/js/layout_User/pscroll.js",
-                "~/public/js/layout_User/main.js"
+                "~/public/js/common/jquery-form.js",
+                "~/public/js/common/jquery-cookie.js",
+                "~/public/js/common/base64.js",
+                "~/public/js/layout_User/main.js",
+                "~/public/js/common/common.js",
+                "~/public/js/common/jquery.error-style.js",
+                "~/public/js/common/jquery.alerts.js"
 
             ));
             bundles.Add(new StyleBundle("~/public/css/userCommon").Include(
